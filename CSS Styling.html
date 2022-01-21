@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Lucida Calligraphy;
+            box-sizing: border-box;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid antiquewhite;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+
+        input[type=button] {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: blue;
+        }
+
+        .container {
+            border: 20px;
+            background-color: orange;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 align="center"><strong>Contact Form</strong></h2>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname">
+
+            <label for="emailid">Email</label>
+            <input type="text" id="emailid" name="Emailid">
+            <label for="Message">Message</label><br>
+            <input id="subject" name="subject" style="height:500px,min-width:20px,padding:12px"><br><br>
+
+            <input type="button" onclick=submitt() value="SUBMIT">
+            <script>
+                function submitt() {
+                    alert("Your information is successfully submitted!");
+                }
+            </script>
+        </form>
+    </div>
+
+</body>
+
+</html> 
